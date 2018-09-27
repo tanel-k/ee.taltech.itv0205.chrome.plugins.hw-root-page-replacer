@@ -27,13 +27,19 @@ function main() {
     return;
   }
 
+  var username = objURL.pathParts[0];
+  if (username.length <= 1 || !username.startsWith('~')) {
+    return;
+  }
+
 /*
   var testNode = selectSingleNode('/html/body/h1[. ="Forbidden"]')
     || selectSingleNode('/html/body[. = "It works"]'); // <- I guess they were testing index.html
   if (!testNode) {
     return;
   }
-  Commented since it's better just to overwrite since some students used the root index.html for testing.
+  Commented since it's better just to overwrite (some students used the root index.html file for testing).
+  Though this also allows for dijkstra.cs.ttu.ee/~[some username that does not exist]
 */
 
   displayFallbackContent(objURL);
