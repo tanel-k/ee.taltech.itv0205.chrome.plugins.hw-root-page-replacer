@@ -1,1 +1,0 @@
-# ee.taltech.itv0205.chrome.plugins.hw-root-page-replacer
