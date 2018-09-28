@@ -13,7 +13,6 @@
 						{{ textContent }}
 					</a>
 				</li>
-				{{{body}}}
 			{{/each}}
 			</ul>
 		</div>

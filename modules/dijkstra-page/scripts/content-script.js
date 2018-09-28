@@ -21,7 +21,6 @@ function displayFallbackContent(objURL) {
 }
 
 function main() {
-  // Note: would be better to check HTTPstatus, but it's a hassle
   var objURL = getLocalURLParts();
   if (objURL.pathParts.length != 1) {
     return;
@@ -33,6 +32,7 @@ function main() {
   }
 
 /*
+  // Note: would be better to check HTTPstatus, but it's a hassle
   var testNode = selectSingleNode('/html/body/h1[. ="Forbidden"]')
     || selectSingleNode('/html/body[. = "It works"]'); // <- I guess they were testing index.html
   if (!testNode) {
